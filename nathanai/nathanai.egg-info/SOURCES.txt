@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+nathanai/__init__.py
+nathanai/agent.py
+nathanai/cli.py
+nathanai/providers.py
+nathanai/tools.py
+nathanai.egg-info/PKG-INFO
+nathanai.egg-info/SOURCES.txt
+nathanai.egg-info/dependency_links.txt
+nathanai.egg-info/entry_points.txt
+nathanai.egg-info/requires.txt
+nathanai.egg-info/top_level.txt
+tests/test_basic.py

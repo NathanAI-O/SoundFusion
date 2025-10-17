@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nathanai"
+version = "0.1.0"
+description = "NathanAI - a minimal, extensible CLI agent"
+readme = "README.md"
+authors = [
+  { name = "NathanAI" }
+]
+requires-python = ">=3.9"
+dependencies = [
+  "click>=8.1",
+  "pydantic>=2.7",
+  "python-dotenv>=1.0"
+]
+
+[project.scripts]
+nathanai = "nathanai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nathanai*"]
