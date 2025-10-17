@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: nathanai
+Version: 0.1.0
+Summary: NathanAI - a minimal, extensible CLI agent
+Author: NathanAI
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1
+Requires-Dist: pydantic>=2.7
+Requires-Dist: python-dotenv>=1.0
+
+# NathanAI
+
+NathanAI es un agente de línea de comandos minimalista y extensible.
+
+## Instalación (editable)
+
+```bash
+pip install -e ./nathanai
+```
+
+## Uso rápido
+
+```bash
+nathanai chat --model mock --system "Eres NathanAI, un asistente útil" --message "Hola"
+```
+
+## Configuración opcional
+
+Crea un archivo `.env` con claves como `OPENAI_API_KEY` si vas a usar el proveedor OpenAI.
+
+## Desarrollo
+
+- Ejecuta pruebas: `pytest -q`
+- Formato sugerido: `ruff`, `black` (no incluidos por defecto)
